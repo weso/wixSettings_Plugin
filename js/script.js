@@ -38,7 +38,12 @@ function appendField(type) {
 	if (type == 'visualisations') {
 		var form = document.getElementById('twi-settings-' + type + '-form');
 		var formChilds = form.getElementsByTagName('div');
-		form.insertBefore(createFormField(type, formChilds.length), formChilds[formChilds.length - 1].nextSibling);
+		if (formChilds.length == 0) {
+			var formInputs = form.getElementsByTagName('input');
+			form.insertBefore(createFormField(type, formChilds.length), formInputs[0]);
+		} else {
+			form.insertBefore(createFormField(type, formChilds.length), formChilds[formChilds.length - 1].nextSibling);
+		}
 	}
 }
 
@@ -47,10 +52,12 @@ function createFormField(type, number) {
 		var div = document.createElement("div");
 		div.className = 'field-container';
 	
+		createChildField('id', number, div);
 		createChildField('path', number, div);
 		createChildField('page', number, div);
 		createChildField('position', number, div);
-
+		createChildField('caption', number, div);
+		createChildField('url', number, div);
 		return div;				
 	}
 }
