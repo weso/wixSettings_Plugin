@@ -18,7 +18,11 @@
 	},
 	{
 	  "name": "Visualisations",
-          "path": "/visualisations/settings.json"
+        "path": "/visualisations/settings.json"
+	},
+	{
+	  "name": "Front Visualisations",
+    "path": "/visualisations/front-settings.json"
 	}
     ]
 }
