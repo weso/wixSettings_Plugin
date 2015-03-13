@@ -1,0 +1,28 @@
+{
+    "paths": [
+	{
+	  "name": "Labels",
+	  "path": "/lang/en.json"		
+	}, 
+	{
+	  "name": "Template renderer",
+	  "path": "/inc/settings.json"
+	},
+	{
+	  "name": "Twitter",
+	  "path": "/inc/twitter/settings.json"
+	},
+	{
+	  "name": "Mail",
+	  "path": "/inc/mail/settings.json"
+	},
+	{
+	  "name": "Visualisations",
+        "path": "/visualisations/settings.json"
+	},
+	{
+	  "name": "Front Visualisations",
+    "path": "/visualisations/front-settings.json"
+	}
+    ]
+}

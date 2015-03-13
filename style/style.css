@@ -1,0 +1,97 @@
+main {
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'trebuchet MS', verdana, arial, sans-serif;
+}
+
+nav.tabs ul {
+  padding: 0;
+  margin: 0 0 -0.05em 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+nav.tabs li {
+  float: left;
+  margin-right: 1em;
+  border-top: 0.1em solid transparent;
+  border-left: 0.1em solid transparent;
+  border-right: 0.1em solid transparent;
+  border-bottom: 0.1em solid #ccc;
+  background-color: #fff;
+  z-index: -1;
+}
+
+nav.tabs li a {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: #666;
+}
+
+nav.tabs li a:hover {
+  color: #477dca;
+}
+
+nav.tabs li.active {
+  background-color: #fff;
+  border-top: 0.1em solid #ccc;
+  border-left: 0.1em solid #ccc;
+  border-right: 0.1em solid #ccc;
+  border-bottom: 0.1em solid #fff;
+  z-index: 100;
+}
+
+nav.tabs li.active a {
+  color: #333;
+}
+
+.panels {
+  border-top: 0.1em solid #ccc;
+  color: #333;
+}
+
+.panels div {
+  padding: 1em;
+  margin: 0;
+}
+
+.panels div.shown {
+  display: block;
+}
+
+.panels div.hidden {
+  display: none;
+}
+
+.panels form label {
+  color: #555;
+  font-size: 0.9em;
+}
+
+.panels form {
+  overflow: hidden;
+}
+
+.panels form input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.panels form input[type="submit"] {
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  background-color: #477dca;
+  color: #fff;
+  border: none;
+  float: right;
+}
+
+.panels form input[type="submit"]:hover {
+  background-color: #888;
+}
