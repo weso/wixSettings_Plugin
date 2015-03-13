@@ -9,19 +9,16 @@ h1 {
 
 nav.tabs ul {
   padding: 0;
-  margin: 0 0 -0.05em 0;
+  margin: 0 0 -0.5em 0;
   list-style: none;
   overflow: hidden;
+  box-shadow: -5px 0 5px -5px #888;
 }
 
 nav.tabs li {
   float: left;
   margin-right: 1em;
-  border-top: 0.1em solid transparent;
-  border-left: 0.1em solid transparent;
-  border-right: 0.1em solid transparent;
-  border-bottom: 0.1em solid #ccc;
-  background-color: #fff;
+  background-color: #eee;
   z-index: -1;
 }
 
@@ -38,10 +35,6 @@ nav.tabs li a:hover {
 
 nav.tabs li.active {
   background-color: #fff;
-  border-top: 0.1em solid #ccc;
-  border-left: 0.1em solid #ccc;
-  border-right: 0.1em solid #ccc;
-  border-bottom: 0.1em solid #fff;
   z-index: 100;
 }
 
@@ -50,8 +43,9 @@ nav.tabs li.active a {
 }
 
 .panels {
-  border-top: 0.1em solid #ccc;
   color: #333;
+  background-color: #fff;
+  box-shadow: 4px 0 4px -4px #888, -4px 0 8px -4px #888;
 }
 
 .panels div {
